@@ -1,1 +1,3 @@
 # ITirSpeksLČ
+
+- [ ] PABEIGT DARBU
