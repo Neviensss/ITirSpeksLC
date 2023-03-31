@@ -15,7 +15,7 @@
                 Autorizācija portālā
             </div>
             <div class="info">
-               <!-- <?php
+                <?php
                     if(isset($_POST["autorizeties"])){
                         require("faili/connect_db.php");
 
@@ -33,7 +33,7 @@
                             while($row = mysqli_fetch_array($rezultats)){
                                 if(password_verify($Parole, $row["Parole"])){
                                     $_SESSION["lietotajvards"] = $lietotajvards;
-                                    header("location:info.php");
+                                    header("location:index.php");
                                 }else{
                                     echo "Nepareizs lietotājvārds vai parole!";
                                 }
@@ -46,7 +46,7 @@
                     if(isset($_GET['logout'])){
                         session_destroy();
                     }
-                ?>-->
+                ?>
             </div>
             <form action="" method="POST">
                 <div class="row">

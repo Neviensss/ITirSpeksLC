@@ -13,10 +13,10 @@
         <h1>IT ir spēks</h1>
         <nav class="navbar">
             <ul>
-                <li><a href="news.html">Aktualitātes</a></li>
-                <li><a href="vakances.html">Vakances</a></li>
-                <li><a id="about" href="par.html">Par mums</a></li>
-                <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                <li><a href="news.php">Aktualitātes</a></li>
+                <li><a href="vakances.php">Vakances</a></li>
+                <li><a id="about" href="par.php">Par mums</a></li>
+                <li><a href="login.php"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
