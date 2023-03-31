@@ -60,9 +60,6 @@
                 <div class="row poga">
                     <input type="submit" name="autorizeties" value="Ielogoties!">
                 </div>
-                <div class="register" >
-                    Neesi lietotājs? <a href="register.php">Reģistrējies!</a>
-                </div>
             </form>
     </div>
 </body>
