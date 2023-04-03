@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autorizācija potālā</title>
-    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="style_login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/167/167515.png" type="image/x-icon">
 </head>

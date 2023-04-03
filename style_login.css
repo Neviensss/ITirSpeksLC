@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body{
-    background: 
+    background: url(images/background.jpg) no-repeat fixed center;
+}
+
+:root{
+    --maincolorG: #4bc346;
+    --maincolorW: #fff;
+    --btnColor: #4bc346bf;
 }
 
 .container{
