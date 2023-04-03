@@ -231,3 +231,138 @@ blackquote{
     .pare{
         text-align: left;
     }
+
+    .admin .kopsavilkums{
+        margin-top: 10rem;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap:1.5rem;
+    }
+    
+    .admin .kopsavilkums .informacija{
+        padding: 2.5rem;
+        text-align: center;
+        border: var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--box-shadow);
+    }
+    
+    .admin .kopsavilkums .informacija span{
+        display: inline-block;
+        width: 10rem;
+        height: 10rem;
+        line-height: 6rem;
+        padding: 2rem;
+        font-size: 3rem;
+        color:var(--main-color);
+        background: var(--bg);
+        border-radius: 50%;
+    }
+    
+    .admin .kopsavilkums .informacija h3{
+        color:var(--black);
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+    
+    .admin .kopsavilkums .informacija p{
+        color:var(--light-color);
+        line-height: 1.8;
+        font-size: 1.5rem;
+    }
+    
+    .admin .row{
+        margin-top: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .admin .row .info{
+        flex:1 1 45rem;
+        border:var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--radius);
+    }
+    
+    .admin .row .info2{
+        flex:1 1 20rem;
+        border:var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--radius);
+    }
+    
+    .head-info{
+        background-color: #f8f8f8;
+        color: var(--black);
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .head-color{
+        background-color: var(--bg);
+    }
+    
+    table{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    th, td{
+        text-align: center;
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tr:hover{
+        background-color: var(--bg);
+    }
+    
+    th{
+        font-weight: bold;
+        color: var(--black);
+        text-align:center;
+    }
+    
+    .value{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    
+    .user-ico{
+        padding: 4rem;
+        font-size: 10rem;
+        color: var(--black);
+    }
+    
+    select{
+        height: 4rem;
+        border:var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--radius);
+        margin: 1rem 0;
+    }
+    
+    .adminTabula{
+        font-size: 1.3rem;
+    }
+    
+    .specimg {
+        width: 35rem;
+        height: 15rem;
+        padding: 0 5rem;
+    }
+    
+    .specname {
+        width: 30%;
+    }
+    
+    .specdesc {
+        width: 50%;
+    }
+    
+    .specbtn {
+        margin: 0 3rem;
+    }
