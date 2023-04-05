@@ -23,8 +23,26 @@
                 </tr>
 
                 <?php
-                 
-                ?>
+             
+              require("faili/connect_db.php");
+              $atlasit_spec_SQL = "SELECT * FROM aktualitates";
+
+              $atlasaSpec = mysqli_query($savienojums, $atlasit_spec_SQL);
+
+              while($ieraksts = mysqli_fetch_assoc($atlasaSpec)){
+                  echo "
+                  <tr>
+                      <td class='specname'>(te ir attels)</td>
+                      <td class='specname'>{$ieraksts['Virsraksts']}</td>
+                      <td class='specdesc'>{$ieraksts['Apraksts']}</td>
+                      <td class='specdesc'>(bus edit poga)</td>
+                      <td class='specdesc'>(bus dzesanas poga)</td>
+                  </tr>
+                  ";
+              }
+          ?>
+
+                
             </table>
         </div>
     </div>
