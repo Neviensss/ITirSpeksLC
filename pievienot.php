@@ -1,14 +1,13 @@
 <?php
-                    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                        require "faili/connect_db.php";
-
-                        echo "
-                            <div class='row'>
-                                <form method='POST'>
-                                <label>Vakances nosaukums:</label><br>
-                                    <input type='text' placeholder='Ievadiet vakances nosaukumu'' name='nosaukums' class='box2' title='Nosaukums'>
-                                    <label>Attela URL:</label><br>
-                                    <input type='text' placeholder='Ievadiet attēla URL' name='attels' class='box2' title='Attels'>
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    require "faili/connect_db.php";
+    echo "
+    <div class='row'>
+        <form method='POST'>
+            <label>Vakances nosaukums:</label><br>
+            <input type='text' placeholder='Ievadiet vakances nosaukumu'' name='nosaukums' class='box2' title='Nosaukums'>
+            <label>Attela URL:</label><br>
+            <input type='text' placeholder='Ievadiet attēla URL' name='attels' class='box2' title='Attels'>
                                     <label>Apraksts:</label><br>
                                     <input type='text' placeholder='Ievadiet vakances aprakstu' name='apraksts' class='box2' title='Apraksts'>
                                     <button type='submit'  name='addVac' class='btn'>Pievienot!</button>
