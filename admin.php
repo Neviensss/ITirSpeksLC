@@ -19,11 +19,11 @@
                             </form></span></div>
             <table class="adminTabula">
                 <tr>
-                    <th>Attēls</th>
+                    <th>attels</th>
                     <th>Vakance</th>
                     <th>Apraksts</th>
-                    <th></th>
-                    <th></th>
+                    <th>edit</th>
+                    <th>delete</th>
             </tr>
             <?php
                 require("faili/connect_db.php");
@@ -34,8 +34,11 @@
                 while($ieraksts = mysqli_fetch_assoc($atlasaSpec)){
                     echo "
                     <tr>
+                        <td class='specname'>(te ir attels)</td>
                         <td class='specname'>{$ieraksts['Nosaukums']}</td>
                         <td class='specdesc'>{$ieraksts['Apraksts']}</td>
+                        <td class='specdesc'>(bus edit poga)</td>
+                        <td class='specdesc'>(bus dzesanas poga)</td>
                     </tr>
                     ";
                 }
