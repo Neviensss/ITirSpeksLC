@@ -12,40 +12,33 @@
         <h1>IT ir spēks</h1>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Sākums</a></li>
-                <li><a href="news.html">Aktualitātes</a></li>
-                <li><a id="about" href="par.html">Par mums</a></li>
-                <li><a href=""><i class="fas fa-user"></i></a></li>
+                <li><a href="index.php">Sākums</a></li>
+                <li><a href="news.php">Aktualitātes</a></li>
+                <li><a id="about" href="par.php">Par mums</a></li>
+                <li><a href="login.php"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
     <section id="news">
-        <h1>Te bus 4 vai vairaki  lodzini kas radis pieejamas vakances </h1>
+        <h1>Vakances</h1>
         <div class="box-container">
-            <div class="box">
-                <img src="images/vakance.png" alt="logo">
-                <h3>Vakance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus ex aliquam earum non culpa quibusdam sit animi mollitia maxime error, labore asperiores tenetur iure harum eligendi exercitationem esse reprehenderit sunt nobis natus et! Itaque obcaecati nemo laboriosam optio cum impedit suscipit sint recusandae similique praesentium tempore maiores, cupiditate at?</p>
-                <a href="pieteikties.html" class="btn">Pieteikties</a>
-            </div>                  
-            <div class="box">
-                <img src="images/vakance.png" alt="logo">
-                <h3>Vakance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus ex aliquam earum non culpa quibusdam sit animi mollitia maxime error, labore asperiores tenetur iure harum eligendi exercitationem esse reprehenderit sunt nobis natus et! Itaque obcaecati nemo laboriosam optio cum impedit suscipit sint recusandae similique praesentium tempore maiores, cupiditate at?</p>
-                <a href="pieteikties.html" class="btn">Pieteikties</a>
-            </div>
-            <div class="box">
-                <img src="images/vakance.png" alt="logo">
-                <h3>Vakance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus ex aliquam earum non culpa quibusdam sit animi mollitia maxime error, labore asperiores tenetur iure harum eligendi exercitationem esse reprehenderit sunt nobis natus et! Itaque obcaecati nemo laboriosam optio cum impedit suscipit sint recusandae similique praesentium tempore maiores, cupiditate at?</p>
-                <a href="pieteikties.html" class="btn">Pieteikties</a>
-            </div>
-            <div class="box">
-                <img src="images/vakance.png" alt="logo">
-                <h3>Vakance</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellendus ex aliquam earum non culpa quibusdam sit animi mollitia maxime error, labore asperiores tenetur iure harum eligendi exercitationem esse reprehenderit sunt nobis natus et! Itaque obcaecati nemo laboriosam optio cum impedit suscipit sint recusandae similique praesentium tempore maiores, cupiditate at?</p>
-                          <a href="pieteikties.html" class="btn">Pieteikties</a>
-            </div>
+                <?php
+            require("faili/connect_db.php");
+                $atlasit_spec_SQL = "SELECT * FROM vakances";
+
+                $atlasaSpec = mysqli_query($savienojums, $atlasit_spec_SQL);
+
+                while($ieraksts = mysqli_fetch_assoc($atlasaSpec)){
+                    echo "<div class='box'>
+                    <img src='{$ieraksts['Attels']}'>
+                    <h3>{$ieraksts['Nosaukums']}</h3>
+                    <p>{$ieraksts['Apraksts']}.</p>
+                    <form action='pieteikties.php' method='POST'>
+                        <button type='submit' name='pieteikties' class='btn' value='{$ieraksts['Nosaukums']}'>Pieteikties</button>
+                    </form>
+                </div>";
+                }
+            ?>
         </div>
     </section>
 </body>

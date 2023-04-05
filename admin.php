@@ -14,7 +14,7 @@
 <section class="admin">
     <div class="row">
         <div class="info">
-            <div class="head-info head-color">Vakanču administrēšana<span><form action='specialitateAdd.php' method='POST'>
+            <div class="head-info head-color">Vakanču administrēšana<span><form action='pievienot.php' method='POST'>
                                 <button type='submit' name='apskatitSpec' class='btn2 specbtn'>Pievienot vakanci <i class='fas fa-circle-plus'></i></button>
                             </form></span></div>
             <table class="adminTabula">
