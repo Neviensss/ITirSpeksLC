@@ -1,26 +1,63 @@
-
+<?php 
+    session_start();
+    if(isset($_SESSION['lietotajvards'])){
+?>
 <!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uzņemšana LVT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="../ITirSpeksLC/aktualmod.css">
-    <link rel="shortcut icon" href="images/lvt.png" type="image/x-icon">
+    <title>IT ir spēks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <a href="#" class="logo">IT ir Speks</a>
-    <nav class="navbar">
-        <a href="index.php"><i class="fas fa-home"></i> Sakumlapa</a>
-        <a href="vakances.php"><i class="fas fa-users"></i> Vakances</a>
-        <a href="par.php"><i class="fas fa-tasks"></i> Par Mums</a>
-    </nav>
-    <nav class="navbar">
-        <a href="logout.php"><b></b> <i class="fas fa-power-off"></i></a>
-    </nav>
-    <div id="menu-btn" class="fas fa-bars"></div>
-</header>
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="logo"></div>
+        <h1>IT ir spēks</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.php">Sākums</a></li>
+                <li><a href="news.php">Aktualitātes</a></li>
+                <li><a href="vakances.php">Vakances</a></li>
+                <li><a id="about" href="par.php">Par mums</a></li>
+                <li><a href="admin.php">Pārvaldība</a></li>
+                <li><a href="login.php"><i class="fas fa-user"></i></a></li>
+                <li><a href="faili/logout.php" name="logout"><i class="fas fa-right-from-bracket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<?php
+    }else{
+        ?>
+            <!DOCTYPE html>
+            <html lang="lv">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IT ir spēks</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <header>
+                    <div class="logo"><img src="images/logo.png" alt="logo"></div>
+                    <h1>IT ir spēks</h1>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.php">Sākums</a></li>
+                            <li><a href="news.php">Aktualitātes</a></li>
+                            <li><a href="vakances.php">Vakances</a></li>
+                            <li><a id="about" href="par.php">Par mums</a></li>
+                            <li><a href="login.php"><i class="fas fa-user"></i></a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </body>
+<?php
+    }
+    if(isset($_GET['logout'])){
+        session_destroy();
+    }
+?>
