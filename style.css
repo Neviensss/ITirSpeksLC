@@ -266,6 +266,10 @@ h3{
         height: 50px;
         border-bottom: 1px solid #ddd;
     }
+
+    th{
+        width: 15rem;
+    }
     
     tr:hover{
         background-color: var(--bg);

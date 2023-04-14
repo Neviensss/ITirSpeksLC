@@ -48,8 +48,8 @@
         <h1>Par mums..</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, vitae deleniti! Accusamus qui mollitia iure. Cum, tenetur unde accusamus sed iure laboriosam quod architecto? Modi veritatis ad incidunt officiis doloremque nisi mollitia dolorem. Repudiandae recusandae optio, nobis itaque reiciendis tempore! Architecto temporibus vel reprehenderit repudiandae enim laudantium amet quo mollitia.</p>
     </section>
-    <footer>
-        <p>Copyright &copy; IT ir spēks</p>
-    </footer>
 </body>
+<?php
+include "footer.php";
+?>
 </html>

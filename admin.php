@@ -12,4 +12,7 @@ require "header.php";
     <div class="parvPogas">
         <a href="aktualPar.php" class='btn2'>Aktualitāšu pārvaldība!</a>
     </div>
+    <div class="parvPogas">
+        <a href="pieteikumi.php" class='btn2'>Vakanču pieteikumi!</a>
+    </div>
 </section>
