@@ -29,6 +29,7 @@
             }
     }
 
+<<<<<<< HEAD
     if(isset($_POST['dzestAkt'])){
         $dzesamaAkt = $_POST['dzestAkt'];
 
@@ -43,4 +44,6 @@
             }
     }
 
+=======
+>>>>>>> 50d097506f359c159a457a7b3f951d11acad09fb
 ?>
