@@ -8,10 +8,10 @@
                         <form method='POST'>
                             <label>Vakances nosaukums:</label><br>
                             <input type='text' placeholder='Ievadiet vakances nosaukumu'' name='nosaukums' class='box2' title='Nosaukums'>
-                            <label>Attela URL:</label><br>
-                            <input type='text' placeholder='Ievadiet attēla URL' name='attels' class='box2' title='Attels'>
                             <label>Apraksts:</label><br>
                             <input type='text' placeholder='Ievadiet vakances aprakstu' name='apraksts' class='box2' title='Apraksts'>
+                            <label>Attela URL:</label><br>
+                            <input type='text' placeholder='Ievadiet attēla URL' name='attels' class='box2' title='Attels'>
                             <button type='submit'  name='addVac' class='btn'>Pievienot!</button>
                         </form>
                                     ";
@@ -24,9 +24,11 @@
                                     if(!empty($attels) && !empty($nosaukums) && !empty($apraksts)){
                                         $ievietotSQL = "INSERT INTO vakances(Nosaukums, Apraksts, Attels) VALUE ('$nosaukums', '$apraksts', '$attels')";
                                         if(mysqli_query($savienojums, $ievietotSQL)){
-                                            echo "<div class='pieteiksanaskluda zals'>Ieraksts pievienots veiksmīgi!</div>";
+                                            echo "Ieraksts pievienots veiksmīgi!";
+                                            header("Refresh:2; url=vakancPar.php");
                                         }else{
-                                            echo "<div class='pieteiksanaskluda sarkans'>Radās kļūda pievienojot ierakstu!</div>";
+                                            echo "Radās kļūda pievienojot ierakstu!";
+                                            header("Refresh:2; url=vakancPar.php");
                                         }
                                     }else{
                                         echo "Nav aizpildīti visi ievades lauki!";
