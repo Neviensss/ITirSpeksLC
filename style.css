@@ -202,6 +202,7 @@ footer{
     margin-bottom: 2rem;
     padding: 1rem 4rem;
     border-radius: 1rem;
+    border: solid #333 1px;
     background: #eee;
     color: #000;
     overflow:hidden;
@@ -219,45 +220,6 @@ h3{
 }
     .pare{
         text-align: left;
-    }
-
-    .admin .kopsavilkums{
-        margin-top: 10rem;
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap:1.5rem;
-    }
-    
-    .admin .kopsavilkums .informacija{
-        padding: 2.5rem;
-        text-align: center;
-        border: var(--border);
-        border-radius: var(--radius);
-        box-shadow: var(--box-shadow);
-    }
-    
-    .admin .kopsavilkums .informacija span{
-        display: inline-block;
-        width: 10rem;
-        height: 10rem;
-        line-height: 6rem;
-        padding: 2rem;
-        font-size: 3rem;
-        color:var(--main-color);
-        background: var(--bg);
-        border-radius: 50%;
-    }
-    
-    .admin .kopsavilkums .informacija h3{
-        color:var(--black);
-        padding: 1rem 0;
-        font-size: 2rem;
-    }
-    
-    .admin .kopsavilkums .informacija p{
-        color:var(--light-color);
-        line-height: 1.8;
-        font-size: 1.5rem;
     }
     
     .admin .row{
@@ -406,6 +368,7 @@ h3{
     display:inline-block;
     padding: 1rem 4rem;
     border-radius: 1rem;
+    border: solid #333 1px;
     background: #eee;
     color: #000;
     overflow:hidden;
