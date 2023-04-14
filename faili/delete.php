@@ -15,4 +15,18 @@
             }
     }
 
+    if(isset($_POST['dzestMod'])){
+        $dzesamaMod = $_POST['dzestMod'];
+
+            $dzestSQL = "DELETE FROM lietotaji WHERE lietotajsID=".$_POST['dzestMod'];
+            
+            if(mysqli_query($savienojums, $dzestSQL)){
+                echo "Ieraksts dzēsts veiksmīgi!</div>";
+                header("Refresh:2; url=../modPar.php");
+            }else{
+                echo "Radās kļūda dzēšot ierakstu!</div>";
+                header("Refresh:2; url=../modPar.php");
+            }
+    }
+
 ?>
